@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<h1> {{ title }} ESTO ME ESTA MATANDO </h1>
+<body>
+{% for obj in objects_list %}
+
+<a href='{{ obj.get_absolute }}'>{{ obj.title }}</a><br/> 
+{{ obj.content }}<br/>
+{{ obj.timestamp }}<br/>
+{{ obj.update }}<br/>
+{{ obj.id }}<br/>
+
+
+{% endfor %}
+</body>
+</head> 
+</html>
